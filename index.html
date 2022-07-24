@@ -2,9 +2,16 @@
 <html lang="en">
 <head>
     <title>Portfolio web</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Nicolas,Santiago,Badami,portfolio,backend,programador,joven">
+    <meta name="description" content="Nicolas Badami es un joven programador argentino fullstack">
+    <meta name="author" content="Nicolas Badami">
+    <meta name="copyright" content="Facebook Inc.">
+    <meta name="robots" content="index"> <!--index/noindex es para decidir si esta oculta o no-->
+    <!--<meta name="robots" content="follow"> investigar bien que es porque no explicó-->
 </head>
 <body>
-    <h1>Nicolas Santiago Badami</h1>
+    <h1>Nicolás Santiago Badami</h1>
     <img src="nico.jpg">
     <h2>Programador FULLSTACK</h2>
 
@@ -16,5 +23,25 @@
     <a href="Sing in/Sing in.html" target="_blank"">Iniciar Sesion</a>
     <video src="programarReunion.mkv" controls=""></video>
     <audio src="programarReunion.mkv" controls=""></audio>
+
+    <form method="post">
+        <input type="text" value="usuario" required="" name="User">
+        <input type="password" required="" name="Password">
+        <input type="number" name="Phone">
+        <input type="email" required="" name="Email">
+        <input type="color" name="">
+        <input type="range" min="1" max="5" name="">
+        <input type="date" name="">
+        <input type="time" name="">
+        <input type="button" value="Boton" name="">
+        <input type="submit" name="">
+        <textarea>ingresar una breve descripcion de tu persona</textarea>
+        <textarea readonly="">No puedes escribir nada</textarea>
+        <!--required es para que sea obligatorio
+        pero es hackeable (realmente todo es hackeable por eso se recomienda hacer esto en el backend)
+        value es lo que esta adentro de cada formulario-->
+    </form>
+
+
 </body>
 </html>
